@@ -1,0 +1,521 @@
+
+/* html reset */
+*{
+    margin: 0px;
+    padding:0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    margin: 0px;
+    padding:0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* For the main header  */
+
+#container{
+    display: flex;
+    align-items: center;
+    background-color: rgba(22,22,23,0.8);
+    color: #F5F5F7;
+    width: 100%;
+    
+    
+    /* border:2px solid red; */
+
+}
+ #icon-main{
+     margin-left:10rem;
+     
+ }
+ #icon-main img{
+     width:32px;
+     height: 31px;
+     filter: brightness(135%);
+     
+
+ }
+
+/* for the navbar container  */
+#navbar{
+    display: flex;
+    
+    
+    width:70%;
+    justify-content: space-evenly;
+    
+
+}
+
+
+#navbar ul{
+    list-style: none;
+    display: flex;
+    font-size: 1.5rem;
+    
+}
+
+.item{
+    margin: 15px 40px;
+}
+
+.item a{
+    text-decoration: none;
+    color: #f5f5f7;
+    transition-property: color;
+    transition-duration: 0.8;
+
+}
+
+.item a:hover{
+    color: white;
+}
+
+/* for both the icons */
+
+#last-item{
+    position: relative;
+    right: 110px;
+    width:25%;
+    
+    justify-content: space-evenly;
+    
+    display:flex;
+    
+
+}
+#last-item .icon img{
+    color: white;
+    
+    
+} 
+/* for the common icon in the navbar */
+.icon img{
+    width:37px;
+    height:38px;
+}
+
+
+
+#last-item div:nth-child(1){
+    filter: brightness(465%);
+    
+}
+
+
+#last-item div:nth-child(1) img{
+    height: 40px;
+    
+}
+
+#last-item div:nth-child(2){
+    filter:invert() brightness(80%);
+    
+}
+
+
+    
+    /* primary section starts here  */
+    #section-1{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:3.5rem;
+        font-size: 1.5rem;
+        background-color: whitesmoke;
+        color: rgba(0, 0, 0, 0.705);
+        
+    }
+    #section-1 a{
+        text-decoration: none;
+        color: #06c;
+    }
+    
+    #section-1 a{
+        text-decoration: none;
+        color: #06c;
+    }
+    
+    #section-1 a:hover{
+        text-decoration:underline rgb(8, 73, 117);
+        
+    }
+
+#temp::before{
+    content: "";
+    height:43rem;
+    width:100%;
+    position:absolute;
+    background-color: black;
+    background: url("/images/ipad\ pro.jpg") no-repeat  ;
+    z-index: -1;
+    background-size: cover;
+    opacity: 10;
+    
+}
+    /* This is for the Section 2:  */
+
+    #section-2{
+        color:white;
+        margin-top:3rem;;
+        height:41rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size:1.4rem;
+        line-height:3.8rem;
+        
+        
+    }
+#two-a{
+    font-size:2rem;
+    
+}
+
+#two-a a{
+    text-decoration: none;
+    color: #2997ff;
+    text-shadow: 2px 1.5px 2.5px black;
+    margin:16px;
+    
+}
+
+#two-a a:hover{
+    text-decoration: underline;
+    text-decoration-color: #2997ff;
+    
+    
+}
+
+/* Here starts section-3 */
+#section-3{
+    padding-top: 7rem;
+background-color: #EfE5FE;
+display: flex;
+flex-direction: column;
+align-items: center;
+font-size:1.9rem;
+line-height: 4rem;
+
+
+
+
+}
+#section-3 p:nth-child(3){
+    color: rgba(128, 128, 128, 0.973);
+}
+
+
+
+/* here starts the section 4 */
+#section-4{
+    padding-top: 7rem;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size:1.9rem;
+    line-height: 4rem;
+}
+
+/* here the template area parts of site works */
+#area-1{
+    display:grid;
+    grid-template-areas: 
+    "b1 b1 b2 b2"
+    "b3 b3 b4 b4"
+    "b5 b5 b6 b6";
+
+
+
+}
+/* here are the subboxes of main box  */
+ #box-1{
+    grid-area:b1;
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: black;
+    
+
+
+ }
+
+ #box-1 div:nth-child(1) img{
+     height:40px;
+     width:40px;
+ }
+
+ #box-1 p:first-child{
+     color:red;
+ }
+ #box-2{
+     grid-area:b2;
+ display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:3rem;
+
+ }
+
+ 
+ 
+ #box-3 {
+grid-area:b3;
+ display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ #box-4{
+ display: flex;
+    flex-direction: column;
+    align-items: center;
+grid-area:b4;
+background-color: #F5F5F7;
+ }
+ 
+ #box-5{
+ display: flex;
+    flex-direction: column;
+    align-items: center;
+grid-area:b5;
+background-color: black;
+color: white;
+ }
+ #box-6{
+     background:url("/images/box-5.PNG") no-repeat  center/cover;
+     background-size: cover;
+     
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+grid-area:b6;
+ }
+
+.common{
+    padding-top:6rem;
+    /* border:2px solid red; */
+    font-size: 1.5rem;
+    line-height: 3.5rem;
+margin-right: 1rem;
+
+}
+
+
+/* here section of basic column starts */
+#basic-container{
+    padding-top: 3rem;
+    /* border: 2px solid red; */
+    display: flex;
+    width:75%;
+    margin: auto;
+    
+
+
+
+}
+
+.basic-common{
+    /* border:2px solid red; */
+    
+    width:25%;
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 2.4rem;
+    
+}
+
+
+
+
+
+
+
+
+
+
+/* utility classes for these boxes */
+.pheading{
+    font-size:2.8rem;
+    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.sheading{
+    font-size:2rem;
+    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+
+
+
+#basic-p{
+    
+    width:70%;
+    margin:auto;
+    border-bottom: 2px solid rgb(94, 84, 84);
+    
+    color:rgba(48, 46, 46, 0.747);
+    padding: 3rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-weight: bold;
+}
+#basic-p p{
+    margin:1rem;
+}
+
+
+/* These are the general claasses in the websites  */
+.primary-heading{
+    font-size:5rem;
+    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+.secondary-heading{
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+.two-a1 a{
+    text-decoration: none;
+    color: #2997ff;
+    /* text-shadow: 2px 1.5px 2.5px black; */
+    margin:16px;
+    font-size:2rem;
+
+
+}
+
+.two-a1 a:hover{
+    text-decoration: underline;
+    text-decoration-color: #2997ff;
+    
+    
+}
+.icon{
+    height:40px;
+    width:40px;
+}
+
+
+
+/* general classes for almost last section  */
+
+
+.column{
+    display: flex;
+    flex-direction:column;
+    font-size: 1.15rem;
+    font-weight: bold;
+    
+
+
+
+}
+.column li{
+    list-style: none;
+
+} 
+.column li a{
+    text-decoration:none;
+    color:grey;
+}
+
+.column li a:hover{
+    text-decoration:underline;
+    text-decoration-color: rgba(0, 0, 0, 0.877);
+    color:grey;
+}
+
+
+
+
+
+
+#basic-ender{
+    width:75%;
+    margin:auto;
+    padding:3.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: rgb(94, 84, 84);
+    line-height: 3rem;
+
+
+}
+#basic-ender > p:nth-child(1){
+    padding:1.2rem 0rem;
+    border-bottom: 1px solid gray;
+    
+
+}
+
+.last-a{
+    text-decoration: none;
+    color: rgb(35, 116, 182);
+}
+.last-a:hover{
+    text-decoration: underline;
+    color: rgb(35, 116, 182);
+    text-decoration-color: rgb(35, 116, 182);
+}
+
+
+.ender{
+    display: flex;
+}
+.ender p{
+    width:93%;
+}
+.ender a{
+    text-decoration: none;
+    color: rgb(94, 84, 84);
+
+}
+.ender a:hover{
+    text-decoration: underline;
+    color: rgb(94, 84, 84);
+    text-decoration-color: rgb(94, 84, 84);
+    
+}
+#real-footer{
+    height:1.8rem;
+}
+#real-footer ul{
+    display: flex;
+    list-style: none;
+    
+}
+
+#real-footer ul li{
+    display: flex;
+    list-style: none;
+    width:16.66%;
+    
+    border-right: 1px solid rgba(128, 128, 128, 0.856);
+    
+}
+#real-footer ul li a{
+    text-decoration: none;
+    color: grey;
+    padding-left :0.4rem;
+
+
+    
+}
+#real-footer ul li a:hover{
+    text-decoration:underline;
+    color: grey;
+
+    
+
+    
+}
